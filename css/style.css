@@ -1,0 +1,36 @@
+.test {
+    background-color:blue;
+    }
+
+.jumbotron {
+    margin: 0px;
+}
+
+
+/* Media query */
+
+@media only screen and (min-width: 576px) {
+    .test {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .test {
+        background-color: red;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .test {
+        background-color: yellow;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .test {
+        background-color: orange;
+    }
+}
