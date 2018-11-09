@@ -1,11 +1,43 @@
-.test {
-    background-color:blue;
-    }
+body {
+    background-color:#f2f2f2!important
+}
+
+/* Navabar */
+
+.navbar {
+    background-color: #f2f2f2!important;
+}
+
+/* Section jumbotron */
 
 .jumbotron {
     margin: 0px;
+    background-color: #ffffff;
 }
 
+/* Section footer */
+
+footer {
+    background-color: #454d54!important;
+}
+
+/* Button Read more / jquery */
+
+.moreInformationOl{
+    display: none;
+}
+
+.moreInformationOs{
+    display: none;
+}
+
+.moreInformationEs{
+    display: none;
+}
+
+.moreInformationNy{
+    display: none;
+}
 
 /* Media query */
 
