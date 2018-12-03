@@ -15,6 +15,17 @@ body {
 .dropdown-item {
     padding: .25rem .5rem;
 }
+
+/* offset for ID Links class of offset must be after all IDs*/
+.offset:before { 
+    display: block; 
+    content: " "; 
+    height: 59px;      /* Give height of your fixed element */
+    margin-top: -59px; /* Give negative margin of your fixed element */   
+    visibility: hidden; 
+}
+
+
 /* Section jumbotron */
 
 .jumbotron {
@@ -53,7 +64,7 @@ body {
 } 
 
 .testTravel{
-    height: 1000px;
+    margin-bottom: 20px;
 }
 
 /* Section footer */
@@ -103,40 +114,17 @@ footer {
 }
 
 .pro_img_Travel {
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 160px;
     width: auto;
     max-height: 200px;
     /*TEST FOR PICTURE WITH CAMERA STYLE!*/
     /*clip-path: polygon(0% 100%, 100% 100%, 100% 25%, 75% 25%, 65% 10%, 45% 10%, 35% 25%, 15% 25%, 15% 15%, 5% 15%, 5% 25%, 0% 25%, 0% 60%, 30% 60%, 30% 40%, 50% 40%, 70% 40%, 70% 60%, 70% 80%, 50% 80%, 30% 80%, 30% 60%, 35% 60%, 35% 45%, 50% 45%, 65% 45%, 65% 60%, 65% 75%, 50% 75%, 35% 75%, 35% 60%, 0% 60%);*/
 }
 
-/* Media query */
-
-@media only screen and (min-width: 576px) {
-    .test {
-        background-color: green;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .test {
-        background-color: red;
-    }
-}
-
-
-@media only screen and (min-width: 992px) {
-    .test {
-        background-color: yellow;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-    .test {
-        background-color: orange;
-    }
+.buttonTravel {
+    width: 160px;
+    height: auto;
+    margin: auto;
 }

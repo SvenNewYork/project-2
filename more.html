@@ -13,12 +13,12 @@
     </head>
     <body class="test">
 <!--------------------- Navigation bar ------------------------>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+     <nav id="navBarId" class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="images/sign.png" alt="my sign" height="50px"></a>
+      <a class="navbar-brand" href="index.html"><img class="imgLogo" src="images/sign.png" alt="my sign" height="60px"></a>
       
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
@@ -78,7 +78,7 @@
                     <a class="dropdown-item" href="more.html">
                       <h5 class="dropdown-header navDdBorderButtom text-center">More</h5>
                     </a>
-                    <a class="dropdown-item" href="more.html">
+                    <a class="dropdown-item" href="more.html#moreTravelling">
                         <h5 class="dropdown-header text-center">Traveling</h5>
                     </a>
                     <a class="dropdown-item" href="more.html">
@@ -108,63 +108,180 @@
 
 <!-----------------------Content Travellig ------------------------>
     <div class="container">
-          <h1 id="moreTravelling">Travelling</h1>
+          <h1 id="moreTravelling" class="offset">Travelling</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt iusto officiis fugit totam officia fuga laborum vitae architecto temporibus est accusamus magnam minima non repellendus repellat voluptatibus ducimus, distinctio laboriosam quam qui, quo quos. Explicabo inventore harum pariatur culpa modi quam similique, possimus sint eos iusto tenetur ut tempore deleniti facere laborum perspiciatis eaque qui, debitis optio consectetur alias, cupiditate delectus quas est incidunt. Esse sapiente, iure. Debitis, ipsa eos ut dolorum quae. Perferendis recusandae maiores quae atque consectetur eligendi sed ad hic ducimus. Quas aspernatur fugiat, a in sit, eaque quam sint repudiandae totam quos corrupti dicta?</p>
+          <div class="text-center">
+            <h6>To get more infos about our great travel destinations, please drag and drop the picture into the world map or click on the link below the picture.</h6>
+          </div>
     </div>
 
 <!------------------------- Collection of Picture  ------------------------------>      
     <section class="container">
           <div class="row justify-space-between">
                     <!-- responsive for diverent divices (col-lg-2 col-md-4 col-6)!! -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 text-center">    <img data-lead="1" class="pro_img_Travel picture" src="images/mathematics-1622448_1920.jpg" alt="Study">
-                        <p>LINK</p>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 text-center">
+                      <img data-lead="1" class="pro_img_Travel picture text-center" src="images\the-world\2013-new-zealand\newZealandOne.jpg" alt="New Zealand">
+                        <div class="buttonTravel">
+                          <button type="button" data-lead="1" class="btn btn-block btn-outline-secondary text-center linkTravel mt-2 mb-2">New Zealand</button>
+                        </div>
+                        <!-- <p class="text-center linkTravel" data-lead="1">New Zealand</p> -->
                     </div>
-                    <div data-lead="2" class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 picture text-center">
-                        <img class="pro_img_Travel" src="images/topography-813844_1920.jpg" alt="Land Surveyor">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 text-center">
+                        <img data-lead="2" class="pro_img_Travel picture text-center" src="images\the-world\2014-marocco\moroccoOne.jpg" alt="Morocco">
+                        <div class="buttonTravel">
+                          <button type="button" data-lead="2" class="btn btn-block btn-outline-secondary text-center linkTravel mt-2 mb-2">Morocco</button>
+                        </div>
+                        <!-- <p class="text-center linkTravel" data-lead="2">Morocco</p> -->
                     </div>
-                    <div data-lead="3" class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 picture text-center">
-                        <img class="pro_img_Travel" src="images/industry-3231739_1920.jpg" alt="High Voltage Pole">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 text-center">
+                        <img data-lead="3" class="pro_img_Travel picture text-center" src="images\the-world\2015-peru-bolivia\peruAndBoliviaOne.jpg" alt="Peru and Bolivia">
+                        <div class="buttonTravel">
+                          <button type="button" data-lead="3" class="btn btn-block btn-outline-secondary text-center linkTravel mt-2 mb-2">Peru & Bolivia</button>
+                        </div>
+                        <!-- <p class="text-center linkTravel" data-lead="3">Peru & Bolivia</p> -->
                     </div>
-                    <div data-lead="4" class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 picture text-center">
-                        <img class="pro_img_Travel" src="images/Kabel.jpg" alt="Cable">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 text-center">
+                        <img data-lead="4" class="pro_img_Travel picture text-center" src="images\the-world\2016-france\franceOne.jpg" alt="France">
+                        <div class="buttonTravel">
+                          <button type="button" data-lead="4" class="btn btn-block btn-outline-secondary text-center linkTravel mt-2 mb-2">France</button>
+                        </div>
+                        <!-- <p class="text-center linkTravel" data-lead="4">France</p> -->
                     </div>
-                    <div data-lead="5" class="col-xl-2 col-lg-6 col-md-4 col-sm-6 col-12 picture text-center">
-                        <img class="pro_img_Travel" src="images/project-management-2738521_1920.jpg" alt="Project Management">
+                    <div class="col-xl-2 col-lg-6 col-md-4 col-sm-6 col-12 text-center">
+                        <img data-lead="5" class="pro_img_Travel picture text-center" src="images\the-world\2017-usa-westcoast\usaOne.jpg" alt="USA">
+                        <div class="buttonTravel">
+                          <button type="button" data-lead="5" class="btn btn-block btn-outline-secondary text-center linkTravel mt-2 mb-2">USA Westcoast</button>
+                        </div>
+                        <!-- <p class="text-center linkTravel" data-lead="5">USA Westcoast</p> -->
                     </div>
-                    <div data-lead="6" class="col-xl-2 col-lg-6 col-md-4 col-sm-6 col-12 picture text-center">
-                        <img class="pro_img_Travel" src="images/coding_800x800.jpg" alt="Coding">
+                    <div class="col-xl-2 col-lg-6 col-md-4 col-sm-6 col-12 text-center">
+                        <img data-lead="6" class="pro_img_Travel picture text-center" src="images\the-world\2018-usa-alaska\usaAlaskaOne.jpg" alt="Coding">
+                        <div class="buttonTravel">
+                          <button type="button" data-lead="6" class="btn btn-block btn-outline-secondary text-center linkTravel mt-2 mb-2">USA Alaska</button>
+                        </div>
+                        <!-- <p class="text-center linkTravel" data-lead="6">USA Alaska</p> -->
                     </div>
             </div> <!-- row -->
         </section> <!-- Container -->
 <!------------------------- Collection of Picture Ends  ------------------------------>
 
         <section class="container">
-          <div class="text-center">
-            <h6>To get more infos about our great travel destinations, please drag and drop the picture above into the world map or click on the link below the picture.</h6>
-          </div>
+          
           <div class="text-center rahmen">
-            <img id="worldMap" class="img-fluid w-75 rounded m-3" src="images/Weltkarte-blank.jpg">
+            <img id="worldMap" class="img-fluid w-75 rounded" src="images/Weltkarte-blank.jpg">
           </div>
         </section>
 
         <section class="container testTravel">
           <div id="newZealand" class="travelStory travelStoryHide">
-            <h1>New Zealand</h1>
+              <h1>New Zealand</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tempore aspernatur, necessitatibus quam, velit incidunt aliquam sed nam commodi perferendis, et deserunt eligendi corrupti. Alias, dicta! Ratione, quisquam eos pariatur, illo omnis alias hic quis officiis aliquam veritatis adipisci repellendus.</p>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2013-new-zealand\2.jpg" alt="New Zealand picture 2" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2013-new-zealand\5.jpg" alt="New Zealand picture 5" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2013-new-zealand\4.jpg" alt="New Zealand picture 4" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2013-new-zealand\7.jpg" alt="New Zealand picture 7" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2013-new-zealand\12.jpg" alt="New Zealand picture 12" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2013-new-zealand\6.jpg" alt="New Zealand picture 6" width="330">
+                    </div> 
+                </div>
           </div>
+          
           <div id="morocco" class="travelStory travelStoryHide">
             <h1>Morocco</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tempore aspernatur, necessitatibus quam, velit incidunt aliquam sed nam commodi perferendis, et deserunt eligendi corrupti. Alias, dicta! Ratione, quisquam eos pariatur, illo omnis alias hic quis officiis aliquam veritatis adipisci repellendus.</p>
+              <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2014-marocco\2.jpg" alt="Morocco picture 2" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2014-marocco\9.jpg" alt="Morocco picture 9" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2014-marocco\12.jpg" alt="Morocco picture 12" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2014-marocco\6.jpg" alt="Morocco picture 6" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2014-marocco\10.jpg" alt="Morocco picture 10" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2014-marocco\8.jpg" alt="Morocco picture 8" width="330">
+                    </div> 
+                </div>
+
           </div>
           <div id="peruAndBolivia" class="travelStory travelStoryHide">
             <h1>Peru and Bolivia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tempore aspernatur, necessitatibus quam, velit incidunt aliquam sed nam commodi perferendis, et deserunt eligendi corrupti. Alias, dicta! Ratione, quisquam eos pariatur, illo omnis alias hic quis officiis aliquam veritatis adipisci repellendus.</p>
+              <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2015-peru-bolivia\1.jpg" alt="Peru and Bolivia picture 1" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2015-peru-bolivia\4.jpg" alt="Peru and Bolivia picture 4" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2015-peru-bolivia\8.jpg" alt="Peru and Bolivia picture 8" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2015-peru-bolivia\3.jpg" alt="Peru and Bolivia picture 3" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2015-peru-bolivia\6.jpg" alt="Peru and Bolivia picture 6" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2015-peru-bolivia\9.jpg" alt="Peru and Bolivia picture 9" width="330">
+                    </div> 
+                </div>
           </div>
           <div id="france" class="travelStory travelStoryHide">
             <h1>France</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tempore aspernatur, necessitatibus quam, velit incidunt aliquam sed nam commodi perferendis, et deserunt eligendi corrupti. Alias, dicta! Ratione, quisquam eos pariatur, illo omnis alias hic quis officiis aliquam veritatis adipisci repellendus.</p>
+              <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2016-france\1.jpg" alt="France picture 1" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2016-france\5.jpg" alt="France picture 5" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2016-france\7.jpg" alt="France picture 7" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2016-france\10.jpg" alt="France picture 10" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2016-france\6.jpg" alt="France picture 6" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2016-france\8.jpg" alt="France picture 8" width="330">
+                    </div> 
+                </div>
           </div>
           <div id="usaWestcoast" class="travelStory travelStoryHide">
             <h1>USA Westcoast</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tempore aspernatur, necessitatibus quam, velit incidunt aliquam sed nam commodi perferendis, et deserunt eligendi corrupti. Alias, dicta! Ratione, quisquam eos pariatur, illo omnis alias hic quis officiis aliquam veritatis adipisci repellendus.</p>
+              <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2017-usa-westcoast\7.jpg" alt="USA Westcoast picture 7" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2017-usa-westcoast\9.jpg" alt="USA Westcoast picture 9" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2017-usa-westcoast\1.jpg" alt="USA Westcoast picture 1" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2017-usa-westcoast\5.jpg" alt="USA Westcoast picture 5" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2017-usa-westcoast\8.jpg" alt="USA Westcoast picture 8" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2017-usa-westcoast\6.jpg" alt="USA Westcoast picture 6" width="330">
+                    </div> 
+                </div>
           </div>
           <div id="usaAlaska" class="travelStory travelStoryHide">
             <h1>USA Alaska</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, tempore aspernatur, necessitatibus quam, velit incidunt aliquam sed nam commodi perferendis, et deserunt eligendi corrupti. Alias, dicta! Ratione, quisquam eos pariatur, illo omnis alias hic quis officiis aliquam veritatis adipisci repellendus.</p>
+              <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2018-usa-alaska\7.jpg" alt="Alaska picture 7" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2018-usa-alaska\1.jpg" alt="Alaska picture 1" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2018-usa-alaska\3.jpg" alt="Alaska picture 3" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2018-usa-alaska\4.jpg" alt="Alaska picture 4" width="330">
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-0 text-center">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2018-usa-alaska\5.jpg" alt="Alaska picture 5" width="330">
+                      <img class="img-responsive img-thumbnail mb-2" src="images\the-world\2018-usa-alaska\6.jpg" alt="Alaska picture 6" width="330">
+                    </div> 
+                </div>
           </div>
 
 
